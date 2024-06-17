@@ -40,4 +40,5 @@ while wana_do:
     play_it_again = input(
         "Type 'yes' to go again. Otherwise type 'no':\n").lower()
     if play_it_again != "yes":
+        print("have a good day bye...")
         wana_do = False
