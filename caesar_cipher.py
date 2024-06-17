@@ -6,12 +6,12 @@ def encrypt_decrypt(plain_text, shift_key, mode):
     result_text = ""
     for char in plain_text:
         if char in alphabet_list:
-            postion = alphabet_list.index(char)
+            position = alphabet_list.index(char)
             if mode == "encrypt":
-                new_postion = (postion+shift_key) % 26
+                new_position = (position+shift_key) % 26
             elif mode == "decrypt":
-                new_postion = (postion-shift_key) % 26
-            result_text += alphabet_list[new_postion]
+                new_position = (position-shift_key) % 26
+            result_text += alphabet_list[new_position]
         else:
             result_text += char
     return result_text
